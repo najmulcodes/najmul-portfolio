@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Najmul Hasan – Developer Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with **Next.js (App Router)** and **Tailwind CSS**, showcasing my projects, technical skills, education, and professional experience.
 
-First, run the development server:
+Live Site: [Add your deployed link here]
 
-```bash
+---
+
+## 🚀 Tech Stack
+
+- Next.js 16 (App Router)
+- React 19
+- Tailwind CSS v4
+- Framer Motion
+- React Icons
+
+---
+
+## ✨ Features
+
+- Modern dark-themed UI
+- Fully responsive design (mobile, tablet, desktop)
+- Smooth scroll navigation
+- Animated hero section
+- Glass-style project cards
+- Individual detailed project pages
+- Contact section with social icons
+- Production-ready optimized build
+
+---
+
+## 📂 Project Structure
+
+app/
+layout.js
+page.js
+projects/
+clubsphere/
+bookheaven/
+greennest/
+
+components/
+Navbar.js
+Hero.js
+About.js
+Skills.js
+Projects.js
+Contact.js
+Footer.js
+
+public/
+profile.jpg
+
+---
+
+## 📌 Projects Included
+
+### 1. ClubSphere – Membership & Event Management
+
+Full-stack application with authentication, role-based dashboards, and CRUD functionality.
+
+### 2. The Book Heaven
+
+Dynamic book management platform with REST API integration.
+
+### 3. GreenNest – Indoor Plant Care & Store
+
+Responsive plant store interface with interactive UI components.
+
+---
+
+## 🧠 About Me
+
+I hold a Bachelor of Business Administration in Accounting & Finance and transitioned into full-stack web development to build structured and scalable web applications. My professional background includes data operations and IT support, which strengthened my analytical and problem-solving skills.
+
+---
+
+## 📬 Contact
+
+- Email: najmulhasanshahin@gmail.com
+- GitHub: https://github.com/Shariarx6T9
+- LinkedIn: https://www.linkedin.com/in/shaariar
+- WhatsApp: https://wa.me/8801840242448
+
+---
+
+## 🛠 Installation & Setup
+
+Clone the repository:
+
+git clone https://github.com/Shariarx6T9/your-repo-name.git
+
+Navigate into the project:
+
+cd your-repo-name
+
+Install dependencies:
+
+npm install
+
+Run development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build for production:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+npm run build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📦 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The project can be deployed on:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Vercel
+- Live Site: https://najmul-portfolio-six.vercel.app/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📄 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open-source and available under the MIT License.
