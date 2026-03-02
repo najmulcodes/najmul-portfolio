@@ -1,27 +1,32 @@
-function Skill({ name }) {
-  return (
-    <div className="bg-slate-800 px-6 py-4 rounded-lg text-center">{name}</div>
-  );
-}
-
 export default function Skills() {
+  const skills = [
+    "HTML & CSS",
+    "JavaScript",
+    "React",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "JWT Authentication",
+    "Git & GitHub",
+  ];
+
   return (
-    <section id="skills" className="py-24 px-6">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-white mb-10 text-center">
-          Skills
+    <section id="skills" className="section">
+      <div className="container-custom">
+        <h2 className="text-3xl font-bold text-white mb-12 text-center">
+          Technical Skills
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">
-          <Skill name="HTML & CSS" />
-          <Skill name="JavaScript" />
-          <Skill name="React" />
-          <Skill name="Tailwind CSS" />
-          <Skill name="Node.js" />
-          <Skill name="Express.js" />
-          <Skill name="MongoDB" />
-          <Skill name="JWT Authentication" />
-          <Skill name="Git & GitHub" />
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="bg-slate-800 text-center py-4 rounded-lg border border-slate-700 hover:border-blue-500 transition"
+            >
+              {skill}
+            </div>
+          ))}
         </div>
       </div>
     </section>
