@@ -1,9 +1,10 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Head from "next/head";
 
 export default function Portfolio() {
   const navRef = useRef(null);
+  const [year, setYear] = useState("");
 
   useEffect(() => {
     // ── Inject Google Fonts + FA ──────────────────────────────
@@ -17,9 +18,7 @@ export default function Portfolio() {
     fonts.href = "https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap";
     document.head.appendChild(fonts);
 
-    // ── Year ──────────────────────────────────────────────────
-    const yr = document.getElementById("yr");
-    if (yr) yr.textContent = new Date().getFullYear();
+    setYear(new Date().getFullYear());
 
     // ── Navbar scroll ─────────────────────────────────────────
     const navbar = navRef.current;
@@ -580,7 +579,7 @@ export default function Portfolio() {
 
       {/* FOOTER */}
       <footer className="p-footer">
-        <p>© <span id="yr" /> <span>Najmul Hasan</span> — Full Stack Developer · Dhaka, Bangladesh</p>
+        <p>© {year} <span>Najmul Hasan. All rights reserved.</span> — Full Stack Developer · Dhaka, Bangladesh</p>
       </footer>
     </>
   );
