@@ -332,8 +332,8 @@ export default function Portfolio() {
           ))}
         </ul>
         <div className="p-nav-icons">
-          <a href="https://github.com/Shariarx6T9" target="_blank" rel="noreferrer" aria-label="GitHub"><i className="fab fa-github" /></a>
-          <a href="https://www.linkedin.com/in/shaariar" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i className="fab fa-linkedin" /></a>
+          <a href="https://github.com/najmulcodes" target="_blank" rel="noreferrer" aria-label="GitHub"><i className="fab fa-github" /></a>
+          <a href="https://www.linkedin.com/in/najmulcodes/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i className="fab fa-linkedin" /></a>
           <a href="https://wa.me/8801840242448" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i className="fab fa-whatsapp" /></a>
         </div>
       </nav>
@@ -475,9 +475,9 @@ export default function Portfolio() {
           <h2 className="p-sec-title p-reveal">My <span>Projects</span></h2>
           <div className="p-proj-list">
             {[
-              {name:"ClubSphere",featured:true,tagline:"Membership & Event Management System",desc:"A full-stack application for local clubs to manage members, events and admin workflows. Features role-based dashboards, JWT-protected routes and a complete membership approval flow.",stack:["React","Node.js","Express","MongoDB","JWT","Tailwind CSS"],live:"https://clubsphere-client1.netlify.app/",code:"https://github.com/Shariarx6T9/clubsphere-client"},
-              {name:"The Book Heaven",featured:false,tagline:"Online Book Platform",desc:"A dynamic book browsing and management platform. Users can explore, add, edit and delete books via a REST API with real-time state synchronisation.",stack:["React","Node.js","Express","MongoDB"],live:"https://bookhub-heaven.surge.sh",code:"https://github.com/Shariarx6T9/bookhub-client"},
-              {name:"GreenNest",featured:false,tagline:"Indoor Plant Care & Store",desc:"A responsive plant care and store-inspired web app for plant enthusiasts. Clean UI design, interactive components and responsive layouts across all devices.",stack:["React","Tailwind CSS","Netlify"],live:"https://neon-cendol-639b69.netlify.app",code:"https://github.com/Shariarx6T9/GreenNest---Indoor-Plant-Care-and-Store"},
+              {name:"ClubSphere",featured:true,tagline:"Membership & Event Management System",desc:"A full-stack application for local clubs to manage members, events and admin workflows. Features role-based dashboards, JWT-protected routes and a complete membership approval flow.",stack:["React","Node.js","Express","MongoDB","JWT","Tailwind CSS"],live:"https://clubsphere-client1.netlify.app/",code:"https://github.com/najmulcodes/clubsphere-client"},
+              {name:"The Book Heaven",featured:false,tagline:"Online Book Platform",desc:"A dynamic book browsing and management platform. Users can explore, add, edit and delete books via a REST API with real-time state synchronisation.",stack:["React","Node.js","Express","MongoDB"],live:"https://bookhub-heaven.surge.sh",code:"https://github.com/najmulcodes/bookhub-client"},
+              {name:"GreenNest",featured:false,tagline:"Indoor Plant Care & Store",desc:"A responsive plant care and store-inspired web app for plant enthusiasts. Clean UI design, interactive components and responsive layouts across all devices.",stack:["React","Tailwind CSS","Netlify"],live:"https://neon-cendol-639b69.netlify.app",code:"https://github.com/najmulcodes/GreenNest---Indoor-Plant-Care-and-Store"},
             ].map(({name,featured,tagline,desc,stack,live,code})=>(
               <article key={name} className={`p-proj-card p-reveal${featured?" featured":""}`}>
                 <div>
@@ -506,7 +506,7 @@ export default function Portfolio() {
           <h2 className="p-sec-title p-reveal">Professional <span>Experience</span></h2>
           <div className="p-timeline">
             {[
-              {title:"Data Entry Specialist",sub:"Nation IT Limited",period:"2023 – Present",current:true,desc:"Managing structured data operations, maintaining records and ensuring data accuracy across business workflows."},
+              {title:"Data Entry Specialist",sub:"Nation IT Limited",period:"2024 – Present",current:true,desc:"Managing structured data operations, maintaining records and ensuring data accuracy across business workflows."},
               {title:"Computer Operator",sub:"IT Solution Feni",period:"2015 – 2017",current:false,desc:"Provided IT support and computer operations, handling technical troubleshooting and system maintenance."},
               {title:"Cashier",sub:"Alkhimah Allraqiyat Restaurant — Saudi Arabia",period:"Overseas",current:false,desc:"Managed point-of-sale transactions, customer service, and daily cash reconciliation."},
             ].map(({title,sub,period,current,desc})=>(
@@ -535,7 +535,7 @@ export default function Portfolio() {
           <div className="p-timeline">
             {[
               {title:"BBA — Accounting & Finance",sub:"City College",period:"2019 – 2023",extra:"CGPA 3.04",desc:null},
-              {title:"Certification — Complete Web Development",sub:"Programming Hero",period:"Batch 12",extra:null,desc:"Full Stack Track — covering React, Node.js, Express, MongoDB and deployment."},
+              {title:"Certification — Complete Web Development",sub:"Programming Hero",period:"2025 – 2026",extra:null,desc:"Full Stack Track — covering React, Node.js, Express, MongoDB and deployment."},
               {title:"HSC — Business Studies",sub:"South East Degree College",period:"2013 – 2015",extra:null,desc:null},
               {title:"SSC — Business Studies",sub:"FazilPur Farhad Nagar Zinnah High School",period:"2007 – 2013",extra:null,desc:null},
             ].map(({title,sub,period,extra,desc})=>(
@@ -569,8 +569,8 @@ export default function Portfolio() {
               <i className="fas fa-envelope" /> najmulhasanshahin@gmail.com
             </a>
             <div className="p-social-row p-reveal">
-              <a href="https://github.com/Shariarx6T9" target="_blank" rel="noreferrer" className="p-soc-btn"><i className="fab fa-github" /> GitHub</a>
-              <a href="https://www.linkedin.com/in/shaariar" target="_blank" rel="noreferrer" className="p-soc-btn"><i className="fab fa-linkedin" /> LinkedIn</a>
+              <a href="https://github.com/najmulcodes" target="_blank" rel="noreferrer" className="p-soc-btn"><i className="fab fa-github" /> GitHub</a>
+              <a href="https://www.linkedin.com/in/najmulcodes/" target="_blank" rel="noreferrer" className="p-soc-btn"><i className="fab fa-linkedin" /> LinkedIn</a>
               <a href="https://wa.me/8801840242448" target="_blank" rel="noreferrer" className="p-soc-btn"><i className="fab fa-whatsapp" /> WhatsApp</a>
             </div>
           </div>
