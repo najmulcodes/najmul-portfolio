@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with **Next.js (App Router)** and **Tailwind CSS**, showcasing my projects, technical skills, education, and professional experience.
 
-Live Site: [Add your deployed link here]
+Live Site: https://najmul-portfolio-six.vercel.app/
 
 ---
 
@@ -88,7 +88,7 @@ I hold a Bachelor of Business Administration in Accounting & Finance and transit
 
 Clone the repository:
 
-git clone https://github.com/Shariarx6T9/your-repo-name.git
+git clone https://github.com/Shariarx6T9/najmul-portfolio.git
 
 Navigate into the project:
 
