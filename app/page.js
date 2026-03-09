@@ -389,7 +389,7 @@ export default function Portfolio() {
                 <div key={l} className="p-stat-box"><div className="p-stat-num">{n}</div><div className="p-stat-lbl">{l}</div></div>
               ))}
             </div>
-            <a href="/Coursera P46GK4H3MEKB.pdf" download className="p-card-cta">
+            <a href="/Najmul_Hasan_CV.pdf" download className="p-card-cta">
               <i className="fas fa-download" /> Download CV
             </a>
           </div>
