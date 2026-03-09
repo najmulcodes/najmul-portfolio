@@ -327,7 +327,7 @@ export default function Portfolio() {
           <span className="pname">NajmulHasan</span>
         </div>
         <ul className="p-nav-links">
-          {[["#hero","Home"],["#about","About"],["#skills","Skills"],["#projects","Projects"],["#contact","Contact"]].map(([href,label])=>(
+          {[["#hero","Home"],["#about","About"],["#skills","Skills"],["#projects","Projects"],["#education","Education"],["#contact","Contact"]].map(([href,label])=>(
             <li key={href}><a href={href}>{label}</a></li>
           ))}
         </ul>
