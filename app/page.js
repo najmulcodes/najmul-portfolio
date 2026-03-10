@@ -297,8 +297,8 @@ export default function Portfolio() {
         .p-dl-mobile{display:none}
         @media(max-width:900px){
           .p-hero-inner{grid-template-columns:1fr}
-          .p-hero-card{display:none}
-          .p-dl-mobile{display:inline-flex}
+          .p-hero-card{display:block;max-width:340px;margin:32px auto 0}
+          .p-dl-mobile{display:none}
           .p-about-grid{grid-template-columns:1fr}
           .p-proj-card{grid-template-columns:1fr}
           .p-proj-actions{flex-direction:row;align-items:flex-start}
@@ -361,7 +361,6 @@ export default function Portfolio() {
             <div className="p-hero-btns">
               <a href="#projects" className="p-btn-teal"><i className="fas fa-rocket" /> View Projects</a>
               <a href="#contact" className="p-btn-ghost"><i className="fas fa-paper-plane" /> Let&apos;s Talk</a>
-              <a href="/Najmul_Hasan_CV.pdf" download className="p-btn-ghost p-dl-mobile" style={{alignItems:'center',gap:'8px'}}><i className="fas fa-download" /> Download CV</a>
             </div>
           </div>
 
