@@ -5,6 +5,7 @@ import Head from "next/head";
 export default function Portfolio() {
   const navRef = useRef(null);
   const [year, setYear] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     // ── Inject Google Fonts + FA ──────────────────────────────
@@ -304,11 +305,41 @@ export default function Portfolio() {
           .p-proj-actions{flex-direction:row;align-items:flex-start}
           .p-side-nav{display:none}
         }
+        .p-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;border:none;background:transparent;z-index:201}
+        .p-hamburger span{display:block;width:24px;height:2px;background:var(--white);border-radius:2px;transition:all .3s}
+        .p-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+        .p-hamburger.open span:nth-child(2){opacity:0}
+        .p-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+        .p-mobile-menu{display:none}
         @media(max-width:640px){
           .p-nav{padding:14px 5vw}
           .p-nav-links{display:none}
+          .p-hamburger{display:flex}
           .p-hero-btns{flex-direction:column}
           .p-section{padding:80px 5vw}
+          .p-mobile-menu{
+            display:block;position:fixed;top:0;left:0;right:0;bottom:0;
+            background:rgba(13,17,23,.97);z-index:200;
+            padding:90px 8vw 40px;
+            transform:translateX(100%);transition:transform .3s ease;
+          }
+          .p-mobile-menu.open{transform:translateX(0)}
+          .p-mobile-menu ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+          .p-mobile-menu ul li a{
+            display:block;font-size:1.25rem;font-weight:600;
+            color:var(--muted);padding:14px 0;
+            border-bottom:1px solid var(--border);
+            transition:color .2s;
+          }
+          .p-mobile-menu ul li a:hover,.p-mobile-menu ul li a.active{color:var(--teal)}
+          .p-mobile-menu-icons{display:flex;gap:16px;margin-top:32px}
+          .p-mobile-menu-icons a{
+            width:44px;height:44px;border-radius:12px;
+            border:1px solid var(--border);background:var(--bg2);
+            display:flex;align-items:center;justify-content:center;
+            font-size:1.1rem;color:var(--muted);transition:all .2s;
+          }
+          .p-mobile-menu-icons a:hover{color:var(--teal);border-color:var(--teal-mid)}
         }
       `}</style>
 
@@ -337,8 +368,25 @@ export default function Portfolio() {
           <a href="https://github.com/najmulcodes" target="_blank" rel="noreferrer" aria-label="GitHub"><i className="fab fa-github" /></a>
           <a href="https://www.linkedin.com/in/najmulcodes/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i className="fab fa-linkedin" /></a>
           <a href="https://wa.me/8801840242448" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i className="fab fa-whatsapp" /></a>
+          <button className={`p-hamburger${menuOpen?" open":""}`} onClick={()=>setMenuOpen(o=>!o)} aria-label="Menu">
+            <span/><span/><span/>
+          </button>
         </div>
       </nav>
+
+      {/* Mobile drawer */}
+      <div className={`p-mobile-menu${menuOpen?" open":""}`}>
+        <ul>
+          {[["#hero","Home"],["#about","About"],["#skills","Skills"],["#projects","Projects"],["#education","Education"],["#contact","Contact"]].map(([href,label])=>(
+            <li key={href}><a href={href} onClick={()=>setMenuOpen(false)}>{label}</a></li>
+          ))}
+        </ul>
+        <div className="p-mobile-menu-icons">
+          <a href="https://github.com/najmulcodes" target="_blank" rel="noreferrer"><i className="fab fa-github"/></a>
+          <a href="https://www.linkedin.com/in/najmulcodes/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"/></a>
+          <a href="https://wa.me/8801840242448" target="_blank" rel="noreferrer"><i className="fab fa-whatsapp"/></a>
+        </div>
+      </div>
 
       {/* HERO */}
       <section id="hero">
