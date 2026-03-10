@@ -352,7 +352,7 @@ export default function Portfolio() {
             <h1 className="p-hero-title">
               <span className="hi">Hey,</span>
               I&apos;m Najmul,
-              <span className="role">Full-Stack Developer ...</span>
+              <span className="role">Junior Full-Stack Developer ...</span>
             </h1>
             <p className="p-hero-desc">
               Business graduate turned developer — I build structured, scalable web applications
@@ -378,7 +378,7 @@ export default function Portfolio() {
               <span className="p-card-online" />
             </div>
             <div className="p-card-name">Najmul Hasan</div>
-            <div className="p-card-role">// Full-Stack Developer</div>
+            <div className="p-card-role">// Junior Full-Stack Developer</div>
             <div className="p-card-meta">
               <div className="p-card-meta-row"><i className="fas fa-envelope" /><a href="mailto:najmulhasanshahin@gmail.com">najmulhasanshahin@gmail.com</a></div>
               <div className="p-card-meta-row"><i className="fas fa-map-marker-alt" />Dhaka, Bangladesh</div>
@@ -413,7 +413,7 @@ export default function Portfolio() {
                 <div className="p-tline"><span className="p-tprompt">$</span><span className="p-tcmd">&nbsp;cat najmul.json</span></div>
                 <div className="p-tout">{"{"}</div>
                 <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;name&quot;</span>: <span className="p-tstr">&quot;Najmul Hasan&quot;</span>,</div>
-                <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;role&quot;</span>: <span className="p-tstr">&quot;Full-Stack Developer&quot;</span>,</div>
+                <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;role&quot;</span>: <span className="p-tstr">&quot;Junior Full-Stack Developer&quot;</span>,</div>
                 <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;location&quot;</span>: <span className="p-tstr">&quot;Dhaka, Bangladesh&quot;</span>,</div>
                 <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;education&quot;</span>: <span className="p-tstr">&quot;BBA Accounting &amp; Finance&quot;</span>,</div>
                 <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;experience&quot;</span>: <span className="p-tnum">3</span>,</div>
