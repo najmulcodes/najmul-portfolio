@@ -559,7 +559,7 @@ export default function Portfolio() {
             </div>
             <div className="p-card-divider" />
             <div className="p-card-stats">
-              {[["5","Full Stack Projects"],["6","Total Projects"],["3+","Years Exp"]].map(([n, l]) => (
+              {[["5","Full Stack Projects"],["11","Total Projects"],["1+","Years Exp"]].map(([n, l]) => (
                 <div key={l} className="p-stat-box"><div className="p-stat-num">{n}</div><div className="p-stat-lbl">{l}</div></div>
               ))}
             </div>
