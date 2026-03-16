@@ -563,7 +563,7 @@ export default function Portfolio() {
                 <div key={l} className="p-stat-box"><div className="p-stat-num">{n}</div><div className="p-stat-lbl">{l}</div></div>
               ))}
             </div>
-            <a href="/Najmul_Hasan_CV.pdf" download className="p-card-cta">
+            <a href="/Najmul_Hasan_CV.pdf.html" download className="p-card-cta">
               <i className="fas fa-download" /> Download CV
             </a>
           </div>
@@ -703,7 +703,7 @@ export default function Portfolio() {
                   My CV highlights all <strong style={{color:"var(--white)"}}>{FULLSTACK_PROJECTS.length} full-stack projects</strong> with detailed descriptions of tech stacks, features, and real-world impact. Optimized for technical roles in React, Node.js, and MongoDB.
                 </p>
               </div>
-              <a href="/Najmul_Hasan_CV.pdf" download className="p-cv-btn">
+              <a href="/Najmul_Hasan_CV.pdf.html" download className="p-cv-btn">
                 <i className="fas fa-download" /> Download CV
               </a>
             </div>
