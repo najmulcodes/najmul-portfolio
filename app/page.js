@@ -16,7 +16,7 @@ export default function Portfolio() {
       tagline: "Charity Management Platform",
       desc: "A full-stack family-driven charity management system for a welfare organization. Features a public donation portal, private member dashboards, help request approvals, donation tracking, and role-based access for Member, Admin, and Super Admin. Built with JWT auth and Cloudinary image uploads.",
       stack: ["React", "Node.js", "Express", "MongoDB", "JWT", "Cloudinary", "Tailwind CSS"],
-      live: "https://badaruddinwelfare-client.vercel.app",
+      live: "https://badaruddinwelfareorg.vercel.app",
       code: "https://github.com/najmulcodes/badaruddinwelfare-client",
       impact: "Real-world community impact • 20+ active members • Transparent fund management",
     },
