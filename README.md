@@ -188,7 +188,7 @@ Email
 najmulhasanshahin@gmail.com
 
 GitHub  
-https://github.com/Shariarx6T9
+https://github.com/najmulcodes
 
 LinkedIn  
 https://www.linkedin.com/in/shaariar
