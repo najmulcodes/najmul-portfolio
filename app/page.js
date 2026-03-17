@@ -563,9 +563,10 @@ export default function Portfolio() {
                 <div key={l} className="p-stat-box"><div className="p-stat-num">{n}</div><div className="p-stat-lbl">{l}</div></div>
               ))}
             </div>
-            <a href="/Najmul_Hasan_CV.pdf.html" download className="p-card-cta">
-              <i className="fas fa-download" /> Download CV
-            </a>
+            <button onClick={() => window.open("/Najmul_Hasan_CV.pdf.html", "_blank")} className="p-cv-btn">
+              <i className="fas fa-eye" /> Resume
+             </button>
+
           </div>
         </div>
       </section>
