@@ -363,7 +363,7 @@ export default function Portfolio() {
           <span className="pname">NajmulHasan</span>
         </div>
         <ul className="p-nav-links">
-          {[["#hero","Home"],["#about","About"],["#skills","Skills"],["#projects","Projects"],["#education","Education"],["#contact","Contact"]].map(([href,label])=>(
+          {[["#hero","Home"],["#about","About"],["#skills","Skills"],["#projects","Projects"],["#experience","Experience"],["#education","Education"],["#contact","Contact"]].map(([href,label])=>(
             <li key={href}><a href={href}>{label}</a></li>
           ))}
         </ul>
@@ -380,7 +380,7 @@ export default function Portfolio() {
       {/* Mobile drawer */}
       <div className={`p-mobile-menu${menuOpen?" open":""}`}>
         <ul>
-          {[["#hero","Home"],["#about","About"],["#skills","Skills"],["#projects","Projects"],["#education","Education"],["#contact","Contact"]].map(([href,label])=>(
+          {[["#hero","Home"],["#about","About"],["#skills","Skills"],["#projects","Projects"],["#experience","Experience"],["#education","Education"],["#contact","Contact"]].map(([href,label])=>(
             <li key={href}><a href={href} onClick={()=>setMenuOpen(false)}>{label}</a></li>
           ))}
         </ul>
@@ -538,11 +538,11 @@ export default function Portfolio() {
           <h2 className="p-sec-title p-reveal">My <span>Projects</span></h2>
           <div className="p-proj-list">
             {[
-              {name:"ClubSphere",featured:true,tagline:"Membership & Event Management System",desc:"A full-stack application for local clubs to manage members, events and admin workflows. Features role-based dashboards, JWT-protected routes and a complete membership approval flow.",stack:["React","Node.js","Express","MongoDB","JWT","Tailwind CSS"],live:"https://clubsphere-client1.netlify.app/",code:"https://github.com/najmulcodes/clubsphere-client"},
-              {name:"The Book Heaven",featured:false,tagline:"Online Book Platform",desc:"A dynamic book browsing and management platform. Users can explore, add, edit and delete books via a REST API with real-time state synchronisation.",stack:["React","Node.js","Express","MongoDB"],live:"https://bookhub-heaven.surge.sh",code:"https://github.com/najmulcodes/bookhub-client"},
-              {name:"GreenNest",featured:false,tagline:"Indoor Plant Care & Store",desc:"A responsive plant care and store-inspired web app for plant enthusiasts. Clean UI design, interactive components and responsive layouts across all devices.",stack:["React","Tailwind CSS","Netlify"],live:"https://neon-cendol-639b69.netlify.app",code:"https://github.com/najmulcodes/GreenNest---Indoor-Plant-Care-and-Store"},
-              {name:"MicroTask Platform",featured:true,tagline:"Freelance Micro-Tasking Marketplace",desc:"A full-stack micro-tasking platform with three role-based dashboards for Workers, Buyers and Admins. Workers earn coins by completing tasks, Buyers post tasks and review submissions, and Admins manage the entire ecosystem. Includes Stripe payments and Google OAuth.",stack:["React","Node.js","Express","MongoDB","JWT","Stripe","Tailwind CSS"],live:"https://microtask-client-iota.vercel.app",code:"https://github.com/najmulcodes/microtask-client",creds:{email:"admin@microtask.com",password:"Admin123",role:"Admin"}},
               {name:"Badar Uddin Welfare",featured:false,tagline:"Charity Management Platform",desc:"A full-stack charity management system for a family-run welfare organization. Features a public website for donation requests and a private member portal with dashboards for tracking funds, donations, and help request approvals.",stack:["React","Node.js","Express","MongoDB","JWT","Cloudinary","Tailwind CSS"],live:"https://badaruddinwelfare-client.vercel.app",code:"https://github.com/najmulcodes/badaruddinwelfare-client"},
+              {name:"MicroTask Platform",featured:true,tagline:"Freelance Micro-Tasking Marketplace",desc:"A full-stack micro-tasking platform with three role-based dashboards for Workers, Buyers and Admins. Workers earn coins by completing tasks, Buyers post tasks and review submissions, and Admins manage the entire ecosystem. Includes Stripe payments and Google OAuth.",stack:["React","Node.js","Express","MongoDB","JWT","Stripe","Tailwind CSS"],live:"https://microtask-client-iota.vercel.app",code:"https://github.com/najmulcodes/microtask-client",creds:{email:"admin@microtask.com",password:"Admin123",role:"Admin"}},
+              {name:"ClubSphere",featured:true,tagline:"Membership & Event Management System",desc:"A full-stack application for local clubs to manage members, events and admin workflows. Features role-based dashboards, JWT-protected routes and a complete membership approval flow.",stack:["React","Node.js","Express","MongoDB","JWT","Tailwind CSS"],live:"https://clubsphere-client1.netlify.app/",code:"https://github.com/najmulcodes/clubsphere-client"},
+              {name:"BookHub",featured:false,tagline:"Online Book Platform",desc:"A dynamic book browsing and management platform. Users can explore, add, edit and delete books via a REST API with real-time state synchronisation.",stack:["React","Node.js","Express","MongoDB"],live:"https://bookhub-heaven.surge.sh",code:"https://github.com/najmulcodes/bookhub-client"},
+              {name:"GreenNest",featured:false,tagline:"Indoor Plant Care & Store",desc:"A responsive plant care and store-inspired web app for plant enthusiasts. Clean UI design, interactive components and responsive layouts across all devices.",stack:["React","Tailwind CSS","Netlify"],live:"https://neon-cendol-639b69.netlify.app",code:"https://github.com/najmulcodes/GreenNest---Indoor-Plant-Care-and-Store"},
               {name:"Care.xyz",featured:false,tagline:"Baby Sitting & Elderly Care Platform",desc:"A Next.js care service platform for finding and booking professional caregivers across Bangladesh. Features cascading location selectors for all 8 divisions, dynamic cost calculation, private booking routes, and Google + email authentication via Firebase.",stack:["Next.js","React","Firebase","Tailwind CSS","DaisyUI"],live:"https://care-xyz-baby-sitting-elderly-care.vercel.app",code:"https://github.com/najmulcodes/Care.xyz---Baby-Sitting-Elderly-Care-Service-Platform"},
             ].map(({name,featured,tagline,desc,stack,live,code,creds})=>(
               <article key={name} className={`p-proj-card p-reveal${featured?" featured":""}`}>
