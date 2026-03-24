@@ -239,10 +239,13 @@ export default function Portfolio() {
         .p-proj-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:transparent;transition:background .3s;border-radius:2px 0 0 2px}
         .p-proj-card:hover{border-color:rgba(0,229,195,.18);transform:translateX(5px);box-shadow:0 8px 40px rgba(0,0,0,.35)}
         .p-proj-card:hover::before,.p-proj-card.featured::before{background:var(--teal)}
+        .p-proj-card.flagship::before{background:linear-gradient(180deg,#79c0ff 0%,var(--teal) 100%)}
         .p-proj-card.featured{border-color:rgba(0,229,195,.15)}
+        .p-proj-card.flagship{border-color:rgba(121,192,255,.32);box-shadow:0 16px 48px rgba(0,0,0,.32),0 0 0 1px rgba(121,192,255,.08) inset}
         .p-proj-header{display:flex;align-items:center;gap:10px;margin-bottom:6px}
         .p-proj-name{font-size:1.1rem;font-weight:700;color:var(--white)}
         .p-feat-badge{font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:20px;background:var(--teal-dim);border:1px solid var(--teal-mid);color:var(--teal)}
+        .p-feat-badge.flagship{background:rgba(121,192,255,.14);border-color:rgba(121,192,255,.35);color:#a5d6ff}
         .p-proj-tagline{font-size:.8rem;color:var(--teal);font-weight:500;margin-bottom:12px}
         .p-proj-desc{font-size:.84rem;color:var(--muted);max-width:640px;margin-bottom:18px;line-height:1.75}
         .p-proj-stack{display:flex;flex-wrap:wrap;gap:7px}
@@ -538,18 +541,18 @@ export default function Portfolio() {
           <h2 className="p-sec-title p-reveal">My <span>Projects</span></h2>
           <div className="p-proj-list">
             {[
-              {name:"Badar Uddin Welfare",featured:false,tagline:"Charity Management Platform",desc:"A full-stack charity management system for a family-run welfare organization. Features a public website for donation requests and a private member portal with dashboards for tracking funds, donations, and help request approvals.",stack:["React","Node.js","Express","MongoDB","JWT","Cloudinary","Tailwind CSS"],live:"https://badaruddinwelfare-client.vercel.app",code:"https://github.com/najmulcodes/badaruddinwelfare-client"},
+              {name:"Badar Uddin Welfare",flagship:true,featured:true,tagline:"Charity Management Platform",desc:"A full-stack charity management system for a family-run welfare organization. Features a public website for donation requests and a private member portal with dashboards for tracking funds, donations, and help request approvals.",stack:["React","Node.js","Express","MongoDB","JWT","Cloudinary","Tailwind CSS"],live:"https://badaruddinwelfareorg.vercel.app/",code:"https://github.com/najmulcodes/badaruddinwelfare-client"},
               {name:"MicroTask Platform",featured:true,tagline:"Freelance Micro-Tasking Marketplace",desc:"A full-stack micro-tasking platform with three role-based dashboards for Workers, Buyers and Admins. Workers earn coins by completing tasks, Buyers post tasks and review submissions, and Admins manage the entire ecosystem. Includes Stripe payments and Google OAuth.",stack:["React","Node.js","Express","MongoDB","JWT","Stripe","Tailwind CSS"],live:"https://microtask-client-iota.vercel.app",code:"https://github.com/najmulcodes/microtask-client",creds:{email:"admin@microtask.com",password:"Admin123",role:"Admin"}},
               {name:"ClubSphere",featured:true,tagline:"Membership & Event Management System",desc:"A full-stack application for local clubs to manage members, events and admin workflows. Features role-based dashboards, JWT-protected routes and a complete membership approval flow.",stack:["React","Node.js","Express","MongoDB","JWT","Tailwind CSS"],live:"https://clubsphere-client1.netlify.app/",code:"https://github.com/najmulcodes/clubsphere-client"},
-              {name:"BookHub",featured:false,tagline:"Online Book Platform",desc:"A dynamic book browsing and management platform. Users can explore, add, edit and delete books via a REST API with real-time state synchronisation.",stack:["React","Node.js","Express","MongoDB"],live:"https://bookhub-heaven.surge.sh",code:"https://github.com/najmulcodes/bookhub-client"},
-              {name:"GreenNest",featured:false,tagline:"Indoor Plant Care & Store",desc:"A responsive plant care and store-inspired web app for plant enthusiasts. Clean UI design, interactive components and responsive layouts across all devices.",stack:["React","Tailwind CSS","Netlify"],live:"https://neon-cendol-639b69.netlify.app",code:"https://github.com/najmulcodes/GreenNest---Indoor-Plant-Care-and-Store"},
+              {name:"BookHub",featured:true,tagline:"Online Book Platform",desc:"A dynamic book browsing and management platform. Users can explore, add, edit and delete books via a REST API with real-time state synchronisation.",stack:["React","Node.js","Express","MongoDB"],live:"https://bookhub-heaven.surge.sh",code:"https://github.com/najmulcodes/bookhub-client"},
               {name:"Care.xyz",featured:false,tagline:"Baby Sitting & Elderly Care Platform",desc:"A Next.js care service platform for finding and booking professional caregivers across Bangladesh. Features cascading location selectors for all 8 divisions, dynamic cost calculation, private booking routes, and Google + email authentication via Firebase.",stack:["Next.js","React","Firebase","Tailwind CSS","DaisyUI"],live:"https://care-xyz-baby-sitting-elderly-care.vercel.app",code:"https://github.com/najmulcodes/Care.xyz---Baby-Sitting-Elderly-Care-Service-Platform"},
-            ].map(({name,featured,tagline,desc,stack,live,code,creds})=>(
-              <article key={name} className={`p-proj-card p-reveal${featured?" featured":""}`}>
+              {name:"GreenNest",featured:false,tagline:"Indoor Plant Care & Store",desc:"A responsive plant care and store-inspired web app for plant enthusiasts. Clean UI design, interactive components and responsive layouts across all devices.",stack:["React","Tailwind CSS","Netlify"],live:"https://neon-cendol-639b69.netlify.app",code:"https://github.com/najmulcodes/GreenNest---Indoor-Plant-Care-and-Store"},
+            ].map(({name,featured,flagship,tagline,desc,stack,live,code,creds})=>(
+              <article key={name} className={`p-proj-card p-reveal${flagship?" flagship":""}${featured?" featured":""}`}>
                 <div>
                   <div className="p-proj-header">
                     <h3 className="p-proj-name">{name}</h3>
-                    {featured && <span className="p-feat-badge">Featured</span>}
+                    {flagship ? <span className="p-feat-badge flagship">Flagship</span> : featured && <span className="p-feat-badge">Featured</span>}
                   </div>
                   <p className="p-proj-tagline">{tagline}</p>
                   <p className="p-proj-desc">{desc}</p>

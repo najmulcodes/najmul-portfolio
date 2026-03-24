@@ -27,7 +27,7 @@ const PROJECTS = [
     stack: ["React", "Node.js", "Express", "MongoDB"],
     live: "https://bookhub-heaven.surge.sh",
     github: "https://github.com/Shariarx6T9/bookhub-client",
-    featured: false,
+    featured: true,
   },
   {
     name: "GreenNest",
