@@ -4,30 +4,33 @@ export const metadata = {
   metadataBase: new URL("https://najmul-portfolio-six.vercel.app"),
 
   title: {
-    default: "Najmul Hasan | Full Stack Developer",
+    default: "Najmul Hasan | Full-Stack Developer",
     template: "%s | Najmul Hasan",
   },
 
   description:
-    "Portfolio of Najmul Hasan — Junior Full-Stack Developer specialising in React, Node.js and MongoDB. Building structured and scalable web applications.",
+    "Portfolio of Najmul Hasan — Full-Stack Developer specialising in React, Next.js, Node.js and MongoDB. Building structured and scalable web applications.",
 
   keywords: [
     "Najmul Hasan",
     "Full Stack Developer",
     "MERN Stack Developer",
     "React Developer",
+    "Next.js Developer",
     "Node.js Developer",
     "MongoDB",
+    "TypeScript",
     "Web Developer Portfolio",
+    "Bangladesh Developer",
   ],
 
   authors: [{ name: "Najmul Hasan" }],
   creator: "Najmul Hasan",
 
   openGraph: {
-    title: "Najmul Hasan | Full Stack Developer",
+    title: "Najmul Hasan | Full-Stack Developer",
     description:
-      "Junior Full-Stack Developer specialising in React, Node.js and MongoDB.",
+      "Full-Stack Developer specialising in React, Next.js, Node.js and MongoDB. MERN Stack · TypeScript.",
     url: "https://najmul-portfolio-six.vercel.app",
     siteName: "Najmul Hasan Portfolio",
     images: [
@@ -44,9 +47,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Najmul Hasan | Full Stack Developer",
+    title: "Najmul Hasan | Full-Stack Developer",
     description:
-      "Junior Full-Stack Developer specialising in React, Node.js and MongoDB.",
+      "Full-Stack Developer specialising in React, Next.js, Node.js and MongoDB.",
     images: ["/preview.png"],
   },
 
