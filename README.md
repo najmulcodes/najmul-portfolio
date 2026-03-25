@@ -6,7 +6,7 @@
 
 <p align="center">
 <b>Full Stack Developer | MERN Stack | Next.js</b><br/>
-A modern portfolio showcasing my projects, technical skills, and professional development journey.
+A modern developer portfolio showcasing projects, technical skills, experience, education, and contact details in a polished single-page experience.
 </p>
 
 <p align="center">
@@ -31,16 +31,18 @@ https://najmul-portfolio-six.vercel.app/
 
 # 🧑‍💻 About This Project
 
-This portfolio website was built to present my work as a **Full Stack Developer**, highlighting real-world projects, technical capabilities, and development experience.
+This portfolio website was built to present my work as a **Full Stack Developer**, highlighting real-world projects, technical capabilities, professional experience, and academic background.
 
-The goal of this portfolio is to provide recruiters and collaborators with a **clear overview of my work, skills, and engineering approach.**
+The goal of this portfolio is to give recruiters, clients, and collaborators a **clear and modern overview of my work, skills, and development journey.**
 
 The website focuses on:
 
-• Clean UI/UX design  
+• Clean developer-focused UI  
+• Smooth single-page navigation  
 • Responsive layout across devices  
-• Clear project presentation  
-• Smooth animations and interactions  
+• Project showcase with live and code links  
+• Professional experience and education timeline  
+• Easy contact access for opportunities  
 
 ---
 
@@ -53,13 +55,10 @@ Next.js 16 (App Router)
 React 19
 
 ### Styling
-Tailwind CSS v4
+Custom CSS in App Router global styles
 
-### Animations
-Framer Motion
-
-### Icons
-React Icons
+### Icons / Fonts
+Font Awesome + Google Fonts
 
 ### Deployment
 Vercel
@@ -70,7 +69,7 @@ Vercel
 
 ### Modern Developer Portfolio
 
-Clean layout designed to showcase projects and skills professionally.
+Clean layout designed to showcase projects, skills, and background professionally.
 
 ### Fully Responsive
 
@@ -82,88 +81,143 @@ Optimized for:
 
 ### Smooth Navigation
 
-• Scroll navigation  
-• Section-based layout  
+• Fixed top navigation  
+• Section-based scrolling  
+• Active section indicators  
 
-### Animated Hero Section
+### Animated Interface
 
-Framer Motion powered animations.
+• Reveal-on-scroll effects  
+• Interactive cards  
+• Smooth hover states  
 
-### Project Showcase
+### Professional Sections
 
-• Modern project cards  
-• Individual detailed project pages  
-• Tech stack highlights  
-
-### Contact Section
-
-Easy ways for recruiters or collaborators to reach out.
+• Hero introduction  
+• About me  
+• Skills grid  
+• Featured projects  
+• Experience timeline  
+• Education timeline  
+• Contact section  
 
 ---
 
 # 📂 Project Structure
 
+app/  
+layout.js  
+page.js  
+globals.css  
 
-app/
-layout.js
-page.js
-
-projects/
-clubsphere/
-bookheaven/
-greennest/
-
-components/
-Navbar.js
-Hero.js
-About.js
-Skills.js
-Projects.js
-Contact.js
-Footer.js
-
-public/
-profile.jpg
-
+public/  
+profile.jpg  
+projects/  
+badaruddin.png  
+bookhub.png  
+carexyz.png  
+clubsphere.png  
+greennest.png  
+microtask.png  
 
 ---
 
 # 📌 Featured Projects
 
-## ClubSphere – Membership & Event Management Platform
+## Project Thumbnails
 
-A full-stack web application designed to manage community clubs, memberships, and event scheduling.
-
-Features:
-
-• Role-based authentication  
-• Dashboard management  
-• CRUD operations for events and members  
-• Responsive user interface  
+<table>
+  <tr>
+    <td align="center"><b>Badar Uddin Welfare</b><br/><img src="./public/projects/badaruddin.png" alt="Badar Uddin Welfare thumbnail" width="320"/></td>
+    <td align="center"><b>MicroTask Platform</b><br/><img src="./public/projects/microtask.png" alt="MicroTask Platform thumbnail" width="320"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>ClubSphere</b><br/><img src="./public/projects/clubsphere.png" alt="ClubSphere thumbnail" width="320"/></td>
+    <td align="center"><b>BookHub</b><br/><img src="./public/projects/bookhub.png" alt="BookHub thumbnail" width="320"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Care.xyz</b><br/><img src="./public/projects/carexyz.png" alt="Care.xyz thumbnail" width="320"/></td>
+    <td align="center"><b>GreenNest</b><br/><img src="./public/projects/greennest.png" alt="GreenNest thumbnail" width="320"/></td>
+  </tr>
+</table>
 
 ---
 
-## The Book Heaven
+## Badar Uddin Welfare – Charity Management Platform
 
-A dynamic book discovery platform allowing users to browse and explore curated reading collections.
+A full-stack charity management system for a family-run welfare organization.
 
 Features:
 
-• Modern UI design  
-• Dynamic content rendering  
-• Responsive layout  
+• Public website for donation requests  
+• Private member portal  
+• Fund and donation tracking dashboards  
+• Help request approval workflow  
+
+---
+
+## MicroTask Platform – Freelance Micro-Tasking Marketplace
+
+A role-based micro-tasking platform for Workers, Buyers, and Admins.
+
+Features:
+
+• Role-based dashboards  
+• Task posting and submission flow  
+• Stripe payment integration  
+• Google OAuth authentication  
+
+---
+
+## ClubSphere – Membership & Event Management System
+
+A full-stack web application for managing club memberships, events, and admin workflows.
+
+Features:
+
+• JWT-protected routes  
+• Membership approval flow  
+• Event and member management  
+• Responsive dashboard interface  
+
+---
+
+## BookHub – Online Book Platform
+
+A dynamic platform for browsing and managing books through a REST-based system.
+
+Features:
+
+• Browse and manage books  
+• Add, edit, and delete functionality  
+• Real-time state updates  
+• Clean responsive interface  
+
+---
+
+## Care.xyz – Baby Sitting & Elderly Care Platform
+
+A Next.js care service platform for booking professional caregivers across Bangladesh.
+
+Features:
+
+• Cascading location selectors  
+• Dynamic cost calculation  
+• Private booking routes  
+• Firebase authentication  
 
 ---
 
 ## GreenNest – Indoor Plant Care & Store
 
-An interactive web interface for plant lovers to explore indoor plant care guides and product listings.
+A responsive plant care and store-inspired web app for plant enthusiasts.
 
 Features:
 
-• Responsive design  
 • Interactive UI components  
-• Clean layout with modern styling  
+• Responsive design  
+• Clean visual presentation  
+• Modern frontend layout  
 
 ---
 
@@ -178,7 +232,7 @@ My professional experience includes:
 • Technical troubleshooting  
 • Analytical problem solving  
 
-These experiences shaped my approach to building **efficient, maintainable, and scalable software systems.**
+These experiences shaped my approach to building **efficient, maintainable, and user-focused software systems.**
 
 ---
 
@@ -191,7 +245,7 @@ GitHub
 https://github.com/najmulcodes
 
 LinkedIn  
-https://www.linkedin.com/in/shaariar
+https://www.linkedin.com/in/najmulcodes/
 
 WhatsApp  
 https://wa.me/8801840242448
@@ -202,33 +256,39 @@ https://wa.me/8801840242448
 
 Clone the repository
 
-
+```bash
 git clone https://github.com/Shariarx6T9/najmul-portfolio.git
-
+```
 
 Navigate to the project folder
 
-
+```bash
 cd najmul-portfolio
-
+```
 
 Install dependencies
 
-
+```bash
 npm install
-
+```
 
 Run development server
 
-
+```bash
 npm run dev
-
+```
 
 Build production version
 
-
+```bash
 npm run build
+```
 
+Run ESLint
+
+```bash
+npm run lint
+```
 
 ---
 
