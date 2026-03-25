@@ -317,3 +317,10 @@ body {
   background: rgba(99,102,241,0.3);
   color: var(--text-primary);
 }
+
+/* Project card: flex row with image */
+.p-proj-card { display: flex; flex-direction: row; gap: 20px; align-items: flex-start; }
+@media(max-width:640px) {
+  .p-proj-card { flex-direction: column; }
+  .p-proj-card img { width: 100% !important; height: 180px !important; }
+}

@@ -7,7 +7,6 @@ export default function Portfolio() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    // ── Inject Google Fonts + FA ──────────────────────────────
     const fa = document.createElement("link");
     fa.rel = "stylesheet";
     fa.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css";
@@ -20,14 +19,12 @@ export default function Portfolio() {
 
     setYear(new Date().getFullYear());
 
-    // ── Navbar scroll ─────────────────────────────────────────
     const navbar = navRef.current;
     const onScroll = () => {
       if (navbar) navbar.classList.toggle("scrolled", window.scrollY > 30);
     };
     window.addEventListener("scroll", onScroll, { passive: true });
 
-    // ── Active nav + side dots ────────────────────────────────
     const sections = ["hero","about","skills","projects","experience","education","contact"];
     const navLinks  = document.querySelectorAll(".p-nav-links a");
     const dots      = document.querySelectorAll(".p-side-dot");
@@ -57,7 +54,6 @@ export default function Portfolio() {
       });
     });
 
-    // ── Scroll reveal ─────────────────────────────────────────
     const reveals = document.querySelectorAll(".p-reveal");
     const revObs  = new IntersectionObserver(entries => {
       entries.forEach((e, i) => {
@@ -79,7 +75,6 @@ export default function Portfolio() {
   return (
     <>
       <style>{`
-        /* ── TOKENS ──────────────────────────────────────────── */
         :root {
           --bg:#0d1117; --bg2:#161b22; --bg3:#1c2333;
           --teal:#00e5c3;
@@ -104,7 +99,6 @@ export default function Portfolio() {
         ::-webkit-scrollbar-thumb{background:var(--teal);border-radius:4px}
         ::selection{background:rgba(0,229,195,.2)}
 
-        /* ── TOPO BG ─────────────────────────────────────────── */
         .p-topo{
           position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.035;
           background-image:
@@ -113,7 +107,6 @@ export default function Portfolio() {
             repeating-radial-gradient(circle at 55% 82%,transparent 0,transparent 76px,rgba(0,229,195,1) 77px,transparent 78px);
         }
 
-        /* ── NAVBAR ──────────────────────────────────────────── */
         .p-nav{
           position:fixed;top:0;left:0;right:0;z-index:100;
           display:flex;align-items:center;justify-content:space-between;
@@ -138,12 +131,10 @@ export default function Portfolio() {
         }
         .p-nav-icons a:hover{color:var(--teal);border-color:var(--teal-mid);background:var(--teal-dim);transform:translateY(-2px)}
 
-        /* ── SIDE DOTS ───────────────────────────────────────── */
         .p-side-nav{position:fixed;left:20px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:13px;z-index:90}
         .p-side-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid var(--muted);cursor:pointer;transition:background .25s,height .3s,border-color .25s,box-shadow .25s}
         .p-side-dot.active{background:var(--teal);border-color:var(--teal);height:20px;border-radius:4px;box-shadow:0 0 10px rgba(0,229,195,.45)}
 
-        /* ── HERO ────────────────────────────────────────────── */
         #hero{min-height:100vh;display:flex;align-items:center;padding:80px 6vw 60px;position:relative;z-index:1}
         .p-hero-inner{display:grid;grid-template-columns:1fr 320px;gap:60px;align-items:center;max-width:1100px;width:100%;margin:0 auto}
         .p-hero-tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--fm);font-size:.72rem;color:var(--teal);background:var(--teal-dim);border:1px solid var(--teal-mid);padding:5px 14px;border-radius:20px;margin-bottom:24px;animation:p-fadeUp .6s ease both}
@@ -158,7 +149,6 @@ export default function Portfolio() {
         .p-btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:10px 24px;border:1px solid rgba(255,255,255,.12);color:var(--white);font-size:.84rem;border-radius:9px;background:transparent;transition:border-color .2s,background .2s,transform .2s}
         .p-btn-ghost:hover{border-color:var(--teal-mid);background:var(--teal-dim);transform:translateY(-2px)}
 
-        /* ── HERO CARD ───────────────────────────────────────── */
         .p-hero-card{
           background:linear-gradient(145deg,var(--bg2) 0%,rgba(28,35,51,.9) 100%);
           border:1px solid rgba(255,255,255,.09);border-radius:20px;
@@ -187,7 +177,6 @@ export default function Portfolio() {
         .p-card-cta{margin-top:18px;width:100%;display:flex;justify-content:center;align-items:center;gap:8px;padding:10px 20px;background:var(--teal);color:#0d1117;font-family:var(--fh);font-weight:700;font-size:.8rem;border-radius:9px;border:none;cursor:pointer;transition:opacity .2s,transform .2s,box-shadow .2s}
         .p-card-cta:hover{opacity:.88;transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,229,195,.28)}
 
-        /* ── SECTIONS ────────────────────────────────────────── */
         .p-section{padding:100px 6vw;position:relative;z-index:1}
         .p-section.alt{background:var(--bg2)}
         .p-inner{max-width:1100px;margin:0 auto}
@@ -196,7 +185,6 @@ export default function Portfolio() {
         .p-sec-title{font-size:clamp(1.7rem,3vw,2.5rem);font-weight:700;letter-spacing:-.03em;margin-bottom:52px;color:var(--white)}
         .p-sec-title span{color:var(--teal)}
 
-        /* ── ABOUT ───────────────────────────────────────────── */
         .p-about-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
         .p-terminal{background:var(--bg);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:border-color .3s,box-shadow .3s}
         .p-terminal:hover{border-color:var(--teal-mid);box-shadow:0 0 32px rgba(0,229,195,.05)}
@@ -217,7 +205,6 @@ export default function Portfolio() {
         .p-tag{font-family:var(--fm);font-size:.72rem;padding:4px 12px;border-radius:20px;background:var(--teal-dim);border:1px solid var(--teal-mid);color:var(--teal);transition:background .2s,transform .2s}
         .p-tag:hover{background:rgba(0,229,195,.18);transform:translateY(-1px)}
 
-        /* ── SKILLS ──────────────────────────────────────────── */
         .p-skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
         .p-skill-card{background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:24px 22px;transition:border-color .3s,transform .3s,box-shadow .3s}
         .p-skill-card:hover{border-color:var(--teal-mid);transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.4),0 0 40px rgba(0,229,195,.055)}
@@ -233,16 +220,24 @@ export default function Portfolio() {
         .fa-react{color:#61dafb} .fa-node-js{color:#6cc24a} .fa-git-alt{color:#f14e32}
         .fa-database{color:#47a248} .fa-npm{color:#cb3837}
 
-        /* ── PROJECTS ────────────────────────────────────────── */
         .p-proj-list{display:flex;flex-direction:column;gap:22px}
-        .p-proj-card{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:30px 34px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;transition:border-color .3s,transform .3s,box-shadow .3s;position:relative;overflow:hidden}
+        .p-proj-card{
+          background:var(--bg);border:1px solid var(--border);border-radius:16px;
+          padding:24px 28px;
+          display:flex;flex-direction:row;gap:20px;align-items:flex-start;
+          transition:border-color .3s,transform .3s,box-shadow .3s;
+          position:relative;overflow:hidden;
+        }
         .p-proj-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:transparent;transition:background .3s;border-radius:2px 0 0 2px}
         .p-proj-card:hover{border-color:rgba(0,229,195,.18);transform:translateX(5px);box-shadow:0 8px 40px rgba(0,0,0,.35)}
         .p-proj-card:hover::before,.p-proj-card.featured::before{background:var(--teal)}
         .p-proj-card.flagship::before{background:linear-gradient(180deg,#79c0ff 0%,var(--teal) 100%)}
         .p-proj-card.featured{border-color:rgba(0,229,195,.15)}
         .p-proj-card.flagship{border-color:rgba(121,192,255,.32);box-shadow:0 16px 48px rgba(0,0,0,.32),0 0 0 1px rgba(121,192,255,.08) inset}
-        .p-proj-header{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+        .p-proj-thumb-wrap{width:200px;min-width:200px;height:130px;border-radius:12px;overflow:hidden;flex-shrink:0;background:var(--bg3);}
+        .p-proj-thumb{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;border-radius:0;}
+        .p-proj-body{flex:1;min-width:0;}
+        .p-proj-header{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap;}
         .p-proj-name{font-size:1.1rem;font-weight:700;color:var(--white)}
         .p-feat-badge{font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:20px;background:var(--teal-dim);border:1px solid var(--teal-mid);color:var(--teal)}
         .p-feat-badge.flagship{background:rgba(121,192,255,.14);border-color:rgba(121,192,255,.35);color:#a5d6ff}
@@ -262,7 +257,6 @@ export default function Portfolio() {
         .p-proj-creds .cred-row{color:var(--muted)}
         .p-proj-creds .cred-val{color:var(--white);font-weight:600}
 
-        /* ── TIMELINE ────────────────────────────────────────── */
         .p-timeline{max-width:700px;position:relative}
         .p-timeline::before{content:'';position:absolute;left:0;top:12px;bottom:12px;width:1px;background:linear-gradient(to bottom,var(--teal),transparent 90%);opacity:.28}
         .p-tl-item{padding-left:2.4rem;margin-bottom:26px;position:relative}
@@ -277,7 +271,6 @@ export default function Portfolio() {
         .p-current{display:inline-flex;align-items:center;gap:5px;font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3fb950;padding:2px 9px;border-radius:20px;background:rgba(63,185,80,.08);border:1px solid rgba(63,185,80,.22)}
         .p-current::before{content:'';width:5px;height:5px;border-radius:50%;background:#3fb950;animation:p-pulse 1.5s infinite}
 
-        /* ── CONTACT ─────────────────────────────────────────── */
         .p-contact-wrap{max-width:640px;margin:0 auto;text-align:center}
         .p-contact-wrap .p-sec-label{justify-content:center}
         .p-contact-wrap .p-sec-label::after{display:none}
@@ -288,28 +281,28 @@ export default function Portfolio() {
         .p-soc-btn{display:inline-flex;align-items:center;gap:9px;padding:10px 22px;border-radius:10px;border:1px solid var(--border);background:rgba(255,255,255,.03);font-size:.8rem;font-weight:500;color:var(--muted);transition:all .2s}
         .p-soc-btn:hover{border-color:var(--teal-mid);color:var(--teal);background:var(--teal-dim);transform:translateY(-2px)}
 
-        /* ── FOOTER ──────────────────────────────────────────── */
         .p-footer{background:var(--bg);border-top:1px solid var(--border);padding:28px 6vw;text-align:center;position:relative;z-index:1}
         .p-footer p{font-size:.76rem;color:var(--muted)}
         .p-footer span{color:var(--teal)}
 
-        /* ── ANIMATIONS ──────────────────────────────────────── */
         @keyframes p-fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
         @keyframes p-pulse{0%,100%{opacity:1}50%{opacity:.3}}
         @keyframes p-blink{50%{opacity:0}}
         .p-reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
         .p-reveal.p-visible{opacity:1;transform:none}
 
-        /* ── RESPONSIVE ──────────────────────────────────────── */
         .p-dl-mobile{display:none}
         @media(max-width:900px){
           .p-hero-inner{grid-template-columns:1fr}
           .p-hero-card{display:block;max-width:340px;margin:32px auto 0}
           .p-dl-mobile{display:none}
           .p-about-grid{grid-template-columns:1fr}
-          .p-proj-card{grid-template-columns:1fr}
           .p-proj-actions{flex-direction:row;align-items:flex-start}
           .p-side-nav{display:none}
+        }
+        @media(max-width:640px){
+          .p-proj-card{flex-direction:column;}
+          .p-proj-thumb-wrap{width:100% !important;min-width:unset !important;height:180px !important;}
         }
         .p-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;border:none;background:transparent;z-index:201}
         .p-hamburger span{display:block;width:24px;height:2px;background:var(--white);border-radius:2px;transition:all .3s}
@@ -397,7 +390,6 @@ export default function Portfolio() {
       {/* HERO */}
       <section id="hero">
         <div className="p-hero-inner">
-          {/* Left */}
           <div>
             <div className="p-hero-tag">
               <span className="p-tag-dot" />
@@ -418,7 +410,6 @@ export default function Portfolio() {
             </div>
           </div>
 
-          {/* Hero card */}
           <div className="p-hero-card">
             <div className="p-card-photo-wrap">
               <div className="p-card-photo-ring">
@@ -541,33 +532,52 @@ export default function Portfolio() {
           <h2 className="p-sec-title p-reveal">My <span>Projects</span></h2>
           <div className="p-proj-list">
             {[
-              {name:"Badar Uddin Welfare",flagship:true,featured:true,tagline:"Charity Management Platform",desc:"A full-stack charity management system for a family-run welfare organization. Features a public website for donation requests and a private member portal with dashboards for tracking funds, donations, and help request approvals.",stack:["React","Node.js","Express","MongoDB","JWT","Cloudinary","Tailwind CSS"],live:"https://badaruddinwelfareorg.vercel.app/",code:"https://github.com/najmulcodes/badaruddinwelfare-client"},
-              {name:"MicroTask Platform",featured:true,tagline:"Freelance Micro-Tasking Marketplace",desc:"A full-stack micro-tasking platform with three role-based dashboards for Workers, Buyers and Admins. Workers earn coins by completing tasks, Buyers post tasks and review submissions, and Admins manage the entire ecosystem. Includes Stripe payments and Google OAuth.",stack:["React","Node.js","Express","MongoDB","JWT","Stripe","Tailwind CSS"],live:"https://microtask-client-iota.vercel.app",code:"https://github.com/najmulcodes/microtask-client",creds:{email:"admin@microtask.com",password:"Admin123",role:"Admin"}},
-              {name:"ClubSphere",featured:true,tagline:"Membership & Event Management System",desc:"A full-stack application for local clubs to manage members, events and admin workflows. Features role-based dashboards, JWT-protected routes and a complete membership approval flow.",stack:["React","Node.js","Express","MongoDB","JWT","Tailwind CSS"],live:"https://clubsphere-client1.netlify.app/",code:"https://github.com/najmulcodes/clubsphere-client"},
-              {name:"BookHub",featured:true,tagline:"Online Book Platform",desc:"A dynamic book browsing and management platform. Users can explore, add, edit and delete books via a REST API with real-time state synchronisation.",stack:["React","Node.js","Express","MongoDB"],live:"https://bookhub-heaven.surge.sh",code:"https://github.com/najmulcodes/bookhub-client"},
-              {name:"Care.xyz",featured:false,tagline:"Baby Sitting & Elderly Care Platform",desc:"A Next.js care service platform for finding and booking professional caregivers across Bangladesh. Features cascading location selectors for all 8 divisions, dynamic cost calculation, private booking routes, and Google + email authentication via Firebase.",stack:["Next.js","React","Firebase","Tailwind CSS","DaisyUI"],live:"https://care-xyz-baby-sitting-elderly-care.vercel.app",code:"https://github.com/najmulcodes/Care.xyz---Baby-Sitting-Elderly-Care-Service-Platform"},
-              {name:"GreenNest",featured:false,tagline:"Indoor Plant Care & Store",desc:"A responsive plant care and store-inspired web app for plant enthusiasts. Clean UI design, interactive components and responsive layouts across all devices.",stack:["React","Tailwind CSS","Netlify"],live:"https://neon-cendol-639b69.netlify.app",code:"https://github.com/najmulcodes/GreenNest---Indoor-Plant-Care-and-Store"},
-            ].map(({name,featured,flagship,tagline,desc,stack,live,code,creds})=>(
+              {name:"Badar Uddin Welfare",flagship:true,featured:true,tagline:"Charity Management Platform",desc:"A full-stack charity management system for a family-run welfare organization. Features a public website for donation requests and a private member portal with dashboards for tracking funds, donations, and help request approvals.",stack:["React","Node.js","Express","MongoDB","JWT","Cloudinary","Tailwind CSS"],live:"https://badaruddinwelfareorg.vercel.app/",code:"https://github.com/najmulcodes/badaruddinwelfare-client",img:"/projects/badaruddin.png"},
+              {name:"MicroTask Platform",featured:true,tagline:"Freelance Micro-Tasking Marketplace",desc:"A full-stack micro-tasking platform with three role-based dashboards for Workers, Buyers and Admins. Workers earn coins by completing tasks, Buyers post tasks and review submissions, and Admins manage the entire ecosystem. Includes Stripe payments and Google OAuth.",stack:["React","Node.js","Express","MongoDB","JWT","Stripe","Tailwind CSS"],live:"https://microtask-client-iota.vercel.app",code:"https://github.com/najmulcodes/microtask-client",creds:{email:"admin@microtask.com",password:"Admin123",role:"Admin"},img:"/projects/microtask.png"},
+              {name:"ClubSphere",featured:true,tagline:"Membership & Event Management System",desc:"A full-stack application for local clubs to manage members, events and admin workflows. Features role-based dashboards, JWT-protected routes and a complete membership approval flow.",stack:["React","Node.js","Express","MongoDB","JWT","Tailwind CSS"],live:"https://clubsphere-client1.netlify.app/",code:"https://github.com/najmulcodes/clubsphere-client",img:"/projects/clubsphere.png"},
+              {name:"BookHub",featured:true,tagline:"Online Book Platform",desc:"A dynamic book browsing and management platform. Users can explore, add, edit and delete books via a REST API with real-time state synchronisation.",stack:["React","Node.js","Express","MongoDB"],live:"https://bookhub-heaven.surge.sh",code:"https://github.com/najmulcodes/bookhub-client",img:"/projects/bookhub.png"},
+              {name:"Care.xyz",featured:false,tagline:"Baby Sitting & Elderly Care Platform",desc:"A Next.js care service platform for finding and booking professional caregivers across Bangladesh. Features cascading location selectors for all 8 divisions, dynamic cost calculation, private booking routes, and Google + email authentication via Firebase.",stack:["Next.js","React","Firebase","Tailwind CSS","DaisyUI"],live:"https://care-xyz-baby-sitting-elderly-care.vercel.app",code:"https://github.com/najmulcodes/Care.xyz---Baby-Sitting-Elderly-Care-Service-Platform",img:"/projects/carexyz.png"},
+              {name:"GreenNest",featured:false,tagline:"Indoor Plant Care & Store",desc:"A responsive plant care and store-inspired web app for plant enthusiasts. Clean UI design, interactive components and responsive layouts across all devices.",stack:["React","Tailwind CSS","Netlify"],live:"https://neon-cendol-639b69.netlify.app",code:"https://github.com/najmulcodes/GreenNest---Indoor-Plant-Care-and-Store",img:"/projects/greennest.png"},
+            ].map(({name,featured,flagship,tagline,desc,stack,live,code,creds,img})=>(
               <article key={name} className={`p-proj-card p-reveal${flagship?" flagship":""}${featured?" featured":""}`}>
-                <div>
+
+                {/* LEFT: Thumbnail */}
+                <div className="p-proj-thumb-wrap">
+                  <img
+                    src={img}
+                    alt={name}
+                    className="p-proj-thumb"
+                    onError={e=>{e.currentTarget.style.display="none"}}
+                  />
+                </div>
+
+                {/* MIDDLE: Content */}
+                <div className="p-proj-body">
                   <div className="p-proj-header">
                     <h3 className="p-proj-name">{name}</h3>
                     {flagship ? <span className="p-feat-badge flagship">Flagship</span> : featured && <span className="p-feat-badge">Featured</span>}
                   </div>
                   <p className="p-proj-tagline">{tagline}</p>
                   <p className="p-proj-desc">{desc}</p>
-                  {creds && <div className="p-proj-creds">
-                    <div className="cred-title"><i className="fas fa-key" /> Demo Login</div>
-                    <div className="cred-row">Email &nbsp;<span className="cred-val">{creds.email}</span></div>
-                    <div className="cred-row">Password &nbsp;<span className="cred-val">{creds.password}</span></div>
-                    <div className="cred-row">Role &nbsp;<span className="cred-val">{creds.role}</span></div>
-                  </div>}
-                  <div className="p-proj-stack">{stack.map(t=><span key={t} className="p-tech">{t}</span>)}</div>
+                  {creds && (
+                    <div className="p-proj-creds">
+                      <div className="cred-title"><i className="fas fa-key" /> Demo Login</div>
+                      <div className="cred-row">Email &nbsp;<span className="cred-val">{creds.email}</span></div>
+                      <div className="cred-row">Password &nbsp;<span className="cred-val">{creds.password}</span></div>
+                      <div className="cred-row">Role &nbsp;<span className="cred-val">{creds.role}</span></div>
+                    </div>
+                  )}
+                  <div className="p-proj-stack">
+                    {stack.map(t=><span key={t} className="p-tech">{t}</span>)}
+                  </div>
                 </div>
+
+                {/* RIGHT: Buttons */}
                 <div className="p-proj-actions">
                   <a href={live} target="_blank" rel="noreferrer" className="p-proj-btn live"><i className="fas fa-external-link-alt" /> Live</a>
                   <a href={code} target="_blank" rel="noreferrer" className="p-proj-btn code"><i className="fab fa-github" /> Code</a>
                 </div>
+
               </article>
             ))}
           </div>
