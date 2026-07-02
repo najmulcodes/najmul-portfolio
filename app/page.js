@@ -471,7 +471,7 @@ export default function Portfolio() {
           <div>
             <div className="p-hero-tag">
               <span className="p-tag-dot" />
-              Available for opportunities
+              Available for Freelance Projects
             </div>
             <h1 className="p-hero-title">
               <span className="hi">
@@ -491,12 +491,12 @@ export default function Portfolio() {
               </span>
             </h1>
             <p className="p-hero-desc">
-              Business graduate turned developer — I build structured, scalable web applications
-              with React, Node.js and MongoDB. Focused on clean code and great user experience.
+              I help businesses and startups ship reliable web applications — from idea to live product.
+              Full-stack with React, Node.js and MongoDB. Fast delivery, clean code, clear communication.
             </p>
             <div className="p-hero-btns">
-              <a href="#projects" className="p-btn-teal"><i className="fas fa-rocket" /> View Projects</a>
-              <a href="#contact" className="p-btn-ghost"><i className="fas fa-paper-plane" /> Let&apos;s Talk</a>
+              <a href="#contact" className="p-btn-teal"><i className="fas fa-handshake" /> Hire Me</a>
+              <a href="#projects" className="p-btn-ghost"><i className="fas fa-rocket" /> View My Work</a>
             </div>
           </div>
 
@@ -521,16 +521,16 @@ export default function Portfolio() {
             <div className="p-card-meta">
               <div className="p-card-meta-row"><i className="fas fa-envelope" /><a href="mailto:najmulhasanshahin@gmail.com">najmulhasanshahin@gmail.com</a></div>
               <div className="p-card-meta-row"><i className="fas fa-map-marker-alt" />Dhaka, Bangladesh</div>
-              <div className="p-card-meta-row"><i className="fas fa-briefcase" />Open to Full-time &amp; Freelance</div>
+              <div className="p-card-meta-row"><i className="fas fa-briefcase" />Available for Freelance · Remote</div>
               <div className="p-card-meta-row"><i className="fas fa-globe" /><a href="https://najmulcodes.vercel.app/" target="_blank" rel="noopener noreferrer">najmulcodes.vercel.app</a></div>
             </div>
             <div className="p-card-divider" />
 
             <div className="p-card-stats">
               {[
-                ["7+", "Projects Built"],
-                ["MERN", "Ecosystem"],
-                ["UI/UX", "User Focused"],
+                ["9+", "Projects Shipped"],
+                ["MERN", "Full Stack"],
+                ["24h", "Response Time"],
               ].map(([n, l]) => (
                 <div key={l} className="p-stat-box">
                   <div className="p-stat-num">{n}</div>
@@ -539,8 +539,8 @@ export default function Portfolio() {
               ))}
             </div>
 
-            <a href="https://drive.google.com/file/d/1sHxGHO29oPhT-yzq8B47znDVpPOGYnS8/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="p-card-cta">
-              <i className="fas fa-file-alt" /> Resume
+            <a href="https://www.upwork.com/freelancers/~najmulhasan" target="_blank" rel="noopener noreferrer" className="p-card-cta">
+              <i className="fas fa-handshake" /> Hire on Upwork
             </a>
           </div>
         </div>
@@ -561,11 +561,10 @@ export default function Portfolio() {
                 <div className="p-tline"><span className="p-tprompt">$</span><span className="p-tcmd">&nbsp;cat najmul.json</span></div>
                 <div className="p-tout">{"{"}</div>
                 <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;name&quot;</span>: <span className="p-tstr">&quot;Najmul Hasan&quot;</span>,</div>
-                <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;role&quot;</span>: <span className="p-tstr">&quot;Full-Stack Developer&quot;</span>,</div>
-                <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;location&quot;</span>: <span className="p-tstr">&quot;Dhaka, Bangladesh&quot;</span>,</div>
-                <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;education&quot;</span>: <span className="p-tstr">&quot;BBA Accounting &amp; Finance&quot;</span>,</div>
-                <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;experience&quot;</span>: <span className="p-tnum">3</span>,</div>
-                <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;projects&quot;</span>: <span className="p-tnum">10</span>,</div>
+                <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;role&quot;</span>: <span className="p-tstr">&quot;Freelance Full-Stack Developer&quot;</span>,</div>
+                <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;location&quot;</span>: <span className="p-tstr">&quot;Dhaka, Bangladesh (Remote)&quot;</span>,</div>
+                <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;openTo&quot;</span>: <span className="p-tstr">&quot;Freelance &amp; Contract&quot;</span>,</div>
+                <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;projects&quot;</span>: <span className="p-tnum">9</span>,</div>
                 <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;available&quot;</span>: <span className="p-tbool">true</span>,</div>
                 <div className="p-tout">&nbsp;&nbsp;<span className="p-tval">&quot;stack&quot;</span>: [</div>
                 <div className="p-tout">&nbsp;&nbsp;&nbsp;&nbsp;<span className="p-tstr">&quot;React&quot;</span>, <span className="p-tstr">&quot;Node.js&quot;</span>,</div>
@@ -575,10 +574,10 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="p-about-text p-reveal">
-              <h3>Hello!</h3>
-              <p>My name is <strong>Najmul</strong> and I specialise in web development. I&apos;m a highly motivated individual dedicated to writing clean, robust, reusable code — striving to never stop learning and improving.</p>
-              <p>I hold a <strong>Bachelor of Business Administration in Accounting &amp; Finance</strong> and have worked across data operations and IT support — fields that sharpened my analytical thinking and problem-solving mindset.</p>
-              <p>When I&apos;m not coding, I enjoy reading blogs, learning or picking up some new hands-on side projects.</p>
+              <h3>I build things that work.</h3>
+              <p>My name is <strong>Najmul</strong>. I&apos;m a full-stack developer who helps clients turn ideas into live, working web products. Whether it&apos;s a dashboard, a marketplace, a booking platform, or a REST API — I deliver clean, maintainable code on time.</p>
+              <p>My background in <strong>Business Administration</strong> means I understand the product side too — not just the code. I ask the right questions, communicate clearly, and flag problems early instead of quietly shipping broken features.</p>
+              <p>Currently available for freelance projects. If you have something to build, let&apos;s talk.</p>
               <div className="p-tags">
                 {["React","Node.js","MongoDB","Express","JavaScript","Tailwind CSS","REST API","JWT"].map(t=>(
                   <span key={t} className="p-tag">{t}</span>
@@ -800,9 +799,9 @@ export default function Portfolio() {
           <h2 className="p-sec-title p-reveal">Professional <span>Experience</span></h2>
           <div className="p-timeline">
             {[
-              {title:"Data Entry Specialist",sub:"Nation IT Limited",period:"2024 – June 2025",current:true,desc:"Managing structured data operations, maintaining records and ensuring data accuracy across business workflows."},
+              {title:"Freelance Full-Stack Developer",sub:"Self-employed · Remote",period:"2025 – Present",current:true,desc:"Building full-stack web applications for clients: dashboards, marketplaces, booking platforms, and REST APIs. Working with React, Node.js, MongoDB, and Next.js. Delivering clean, well-structured code on agreed timelines."},
+              {title:"Data Entry Specialist",sub:"Nation IT Limited",period:"2024 – June 2025",current:false,desc:"Managed structured data operations, maintained records and ensured data accuracy across business workflows. Developed strong attention to detail and systematic thinking."},
               {title:"Computer Operator",sub:"IT Solution Feni",period:"2015 – 2017",current:false,desc:"Provided IT support and computer operations, handling technical troubleshooting and system maintenance."},
-              {title:"Cashier",sub:"Alkhimah Allraqiyat Restaurant — Saudi Arabia",period:"Overseas",current:false,desc:"Managed point-of-sale transactions, customer service, and daily cash reconciliation."},
             ].map(({title,sub,period,current,desc})=>(
               <div key={title} className="p-tl-item p-reveal">
                 <div className="p-tl-card">
@@ -810,7 +809,7 @@ export default function Portfolio() {
                     <div><div className="p-tl-title">{title}</div><div className="p-tl-sub">{sub}</div></div>
                     <div style={{display:"flex",flexDirection:"column",gap:6,alignItems:"flex-end"}}>
                       <span className="p-tl-period">{period}</span>
-                      {current && <span className="p-current">Last Job</span>}
+                      {current && <span className="p-current">Current</span>}
                     </div>
                   </div>
                   <p className="p-tl-desc">{desc}</p>
@@ -870,6 +869,7 @@ export default function Portfolio() {
           .p-ct-soc-btn{display:inline-flex;align-items:center;gap:9px;padding:11px 24px;border-radius:12px;border:1px solid var(--border);background:var(--bg2);font-size:.8rem;font-weight:600;color:var(--muted);transition:all .22s;}
           .p-ct-soc-btn i{font-size:.95rem}
           .p-ct-soc-btn:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(0,229,195,.1)}
+          .p-ct-soc-btn.up:hover{border-color:rgba(20,189,149,.5);color:#14bd95;background:rgba(20,189,149,.08)}
           .p-ct-soc-btn.gh:hover{border-color:rgba(255,255,255,.25);color:var(--white);background:rgba(255,255,255,.05)}
           .p-ct-soc-btn.li:hover{border-color:rgba(10,102,194,.5);color:#0a66c2;background:rgba(10,102,194,.08)}
           .p-ct-soc-btn.wa:hover{border-color:rgba(37,211,102,.4);color:#25d366;background:rgba(37,211,102,.08)}
@@ -883,28 +883,28 @@ export default function Portfolio() {
             <p className="p-sec-label p-reveal">Get in touch</p>
             <h2 className="p-sec-title p-reveal">Let&apos;s Work <span>Together</span></h2>
             <p className="p-ct-sub p-reveal">
-              Open to full-time roles, freelance projects and collaborations.<br />
-              I&apos;d love to hear about what you&apos;re building.
+              Available for freelance projects — web apps, APIs, dashboards, and more.<br />
+              Tell me what you need and I&apos;ll get back to you within 24 hours.
             </p>
           </div>
 
           <div className="p-ct-grid">
             <div className="p-ct-left p-reveal">
+              <a href="https://www.upwork.com/freelancers/~najmulhasan" target="_blank" rel="noopener noreferrer" className="p-ct-item">
+                <div className="p-ct-icon"><i className="fas fa-handshake" /></div>
+                <div><p className="p-ct-lbl">Hire on Upwork</p><p className="p-ct-val">upwork.com · Available Now</p></div>
+              </a>
               <a href="mailto:najmulhasanshahin@gmail.com" className="p-ct-item">
                 <div className="p-ct-icon"><i className="fas fa-envelope" /></div>
                 <div><p className="p-ct-lbl">Email</p><p className="p-ct-val">najmulhasanshahin@gmail.com</p></div>
               </a>
-              <a href="tel:+8801840242448" className="p-ct-item">
-                <div className="p-ct-icon"><i className="fas fa-phone" /></div>
-                <div><p className="p-ct-lbl">Phone</p><p className="p-ct-val">+880 1840-242448</p></div>
+              <a href="https://wa.me/8801840242448" target="_blank" rel="noopener noreferrer" className="p-ct-item">
+                <div className="p-ct-icon"><i className="fab fa-whatsapp" /></div>
+                <div><p className="p-ct-lbl">WhatsApp</p><p className="p-ct-val">+880 1840-242448</p></div>
               </a>
               <div className="p-ct-item" style={{cursor:"default"}}>
-                <div className="p-ct-icon"><i className="fas fa-map-marker-alt" /></div>
-                <div><p className="p-ct-lbl">Location</p><p className="p-ct-val">Dhaka, Bangladesh</p></div>
-              </div>
-              <div className="p-ct-item" style={{cursor:"default"}}>
                 <div className="p-ct-icon"><i className="fas fa-clock" /></div>
-                <div><p className="p-ct-lbl">Response Time</p><p className="p-ct-val">Within 24 hours</p></div>
+                <div><p className="p-ct-lbl">Response Time</p><p className="p-ct-val">Within 24 hours · Remote</p></div>
               </div>
             </div>
 
@@ -914,6 +914,9 @@ export default function Portfolio() {
           </div>
 
           <div className="p-ct-soc p-reveal">
+            <a href="https://www.upwork.com/freelancers/~najmulhasan" target="_blank" rel="noopener noreferrer" className="p-ct-soc-btn up">
+              <i className="fas fa-handshake" /> Upwork
+            </a>
             <a href="https://github.com/najmulcodes" target="_blank" rel="noopener noreferrer" className="p-ct-soc-btn gh">
               <i className="fab fa-github" /> GitHub
             </a>

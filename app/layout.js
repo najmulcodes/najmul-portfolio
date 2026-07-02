@@ -4,33 +4,35 @@ export const metadata = {
   metadataBase: new URL("https://najmulcodes.vercel.app"),
 
   title: {
-    default: "Najmul Hasan | Full-Stack Developer",
+    default: "Najmul Hasan | Freelance Full-Stack Developer for Hire",
     template: "%s | Najmul Hasan",
   },
 
   description:
-    "Portfolio of Najmul Hasan — Full-Stack Developer specialising in React, Next.js, Node.js and MongoDB. Building structured and scalable web applications.",
+    "Najmul Hasan — Freelance Full-Stack Developer for hire. Builds web apps, dashboards, REST APIs, and marketplaces with React, Next.js, Node.js and MongoDB. Fast delivery, clean code.",
 
   keywords: [
     "Najmul Hasan",
     "najmulcodes",
-    "Full Stack Developer",
+    "Hire Full Stack Developer",
+    "Freelance Web Developer",
     "MERN Stack Developer",
-    "React Developer",
+    "React Developer for hire",
     "Next.js Developer",
     "Node.js Developer",
     "MongoDB",
-    "Web Developer Portfolio",
-    "Bangladesh Developer",
+    "Freelance MERN Developer",
+    "Web Developer Bangladesh",
+    "Remote Full Stack Developer",
   ],
 
   authors: [{ name: "Najmul Hasan", url: "https://najmulcodes.vercel.app" }],
   creator: "Najmul Hasan",
 
   openGraph: {
-    title: "Najmul Hasan | Full-Stack Developer",
+    title: "Najmul Hasan | Freelance Full-Stack Developer for Hire",
     description:
-      "Full-Stack Developer specialising in React, Next.js, Node.js and MongoDB.",
+      "Freelance Full-Stack Developer — React, Next.js, Node.js, MongoDB. Available for web apps, APIs, and dashboards.",
     url: "https://najmulcodes.vercel.app",
     siteName: "Najmul Hasan Portfolio",
     images: [
@@ -47,9 +49,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Najmul Hasan | Full-Stack Developer",
+    title: "Najmul Hasan | Freelance Full-Stack Developer for Hire",
     description:
-      "Full-Stack Developer specialising in React, Next.js, Node.js and MongoDB.",
+      "Freelance Full-Stack Developer — React, Next.js, Node.js, MongoDB. Available for web apps, APIs, and dashboards.",
     images: ["/preview.png"],
   },
 
@@ -78,6 +80,7 @@ const personSchema = {
       sameAs: [
         "https://github.com/najmulcodes",
         "https://www.linkedin.com/in/najmulcodes",
+        "https://www.upwork.com/freelancers/~najmulhasan",
       ],
       knowsAbout: [
         "React",
