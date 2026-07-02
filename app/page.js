@@ -504,7 +504,7 @@ export default function Portfolio() {
             <div className="p-card-photo-wrap">
               <div className="p-card-photo-ring">
                 <img
-                  src="https://res.cloudinary.com/del0g4led/image/upload/v1781827077/Portfolio_Profile_kbcqug.png"
+                  src="https://res.cloudinary.com/del0g4led/image/upload/v1781821883/Email_Signature_f94pn3.png"
                   alt="Najmul Hasan profile photo"
                   onError={e => {
                     e.currentTarget.style.display = "none";
